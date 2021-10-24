@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Stylish");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  .header-font {
+    font-family: "Stylish", "Raleway", Arial, sans-serif;
+  }
+
+  div.ui.top.fixed.menu {
+    background-color: rgba(238, 232, 232, 0.897);
+  }
+
+  #wrapper {
+    margin-top: 100px;
+  }
+
+
+  div.content.brs-header {
+    font-size: 1.6em;
+  }
+
+  .component-title {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color: #298692;
+  }
+
+  .sub-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #5c5b5b;
+  }
+
+  .sub-description {
+    line-height: 1.7em;
+    font-size: 1.2em;
+    margin-left: 40px;
+    letter-spacing: 0.2px;
+  }
+
+  .component-content {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .frontpage {
+    background-position: center;
+    background-image: url("../assets/lot-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .headline {
+      position: relative;
+      text-align: center;
+      top: 70%;
+      color: white;
+      text-shadow: 2px 2px 5px blue;
+
+      .quote {
+        font-size: 4em;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .quote-author {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+      }
+    }
+
+    #btn-header {
+      background-color: #298692;
+      color: white;
+      font-size: 1.2em;
+
+      &:hover {
+        box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  .book-chapters {
+    #search-input {
+      width: 300px;
+    }
+
+    .list {
+      margin-top: 50px;
+
+      .ui.accordion .title:not(.ui) {
+        padding: 1.5em 0;
+      }
+    }
+  }
+
+  .quiz{
+    .button {
+      margin-left: 20px;
+      width: 150px;
+    }
+
+    .quiz-section {
+      margin-top: 30px;
+
+      .quiz-card {
+        width: 70%;
+        border: 1px solid #298692;
+        border-radius: 5px;
+        padding: 20px;
+        margin: auto;
+      }
+    }
+  }
+
+  //small desktop
+  @media only screen and (max-width: 1280px) {
+    div.ui.header.content {
+      font-size: 1.5em;
+    }
+
+    div.content.brs-header {
+      font-size: 1.3em;
+    }
+
+    .ui.icon.header i.icon {
+      font-size: 1.5em;
+    }
+
+    h1.ui.icon.center.aligned.header.logoHeader {
+      top: 50%;
+    }
+  }
+
+}
+
